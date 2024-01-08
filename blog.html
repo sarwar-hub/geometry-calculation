@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="md:px-5 py-5 px-2 md:mx-10 mx-0 md:my-5 my-0 flex justify-between items-center bg-red-700/50 rounded">
+        <div>
+            <h1 class="text-3xl font-bold text-gray-800">Interactive</h1>
+            <p class="text-white">Geometry Genius</p>
+        </div>
+        <div>
+            <button id="calculator-button" class="text-white font-bold py-2 px-5 bg-red-700 hover:bg-red-800 rounded transition">Calculator</button>
+        </div>
+    </header>
+    <section class="md:mx-[20%] mx-[10%] rounded">
+        <h1 class="text-3xl text-red-700 font-bold mb-2">QnA about JavaScript</h1>
+        <details class="p-5 bg-red-700/50">
+            <summary>What is DOM and what is the purpose of DOM?</summary>
+            <p class="p-5 bg-red-200 rounded">Full form of DOM is Document Object Model. Developer can modify Document structure, styles and content using DOM.</p>
+        </details>      
+        <details class="p-5 bg-red-700/50">
+            <summary>How will you select HTML elements using DOM? Name of the DOM methods.</summary>
+            <p class="p-5 bg-red-200 rounded">There are some methods to select HTML elements using DOM. We can use <i>getElementById()</i>, <i>getElementsByClassName()</i>, <i>querySelector()</i>, <i>querySelectorAll()</i> to select HTML elements.</p>
+        </details>      
+        <details class="p-5 bg-red-700/50">
+            <summary>What is event bubble?</summary>
+            <p class="p-5 bg-red-200 rounded">Event bubble is a way of propagation. By event bubble the inner most element will handled frist and then the outer elements.</p>
+        </details>      
+        <details class="p-5 bg-red-700/50">
+            <summary>What is a callback function and why will you use it?</summary>
+            <p class="p-5 bg-red-200 rounded">A function which is passed as another functions parameter. Callback function is called inside another function to do partial work.</p>
+        </details>
+    </section>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
